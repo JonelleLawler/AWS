@@ -1,12 +1,10 @@
 package com.lawler.jonelle.Database;
 
-import com.amazonaws.client.builder.AwsClientBuilder;
 import com.amazonaws.services.secretsmanager.AWSSecretsManager;
 import com.amazonaws.services.secretsmanager.AWSSecretsManagerClientBuilder;
 import com.amazonaws.services.secretsmanager.model.*;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
 
 import java.nio.ByteBuffer;
 import java.util.Base64;
@@ -22,9 +20,9 @@ public class SecretStore {
         String region = "eu-west-2";
 
 
-        AwsClientBuilder.EndpointConfiguration  config  =  new  AwsClientBuilder.EndpointConfiguration(endpoints, AWS Region);
+        //AwsClientBuilder.EndpointConfiguration  config  =  new  AwsClientBuilder.EndpointConfiguration(endpoints, AWS Region);
         AWSSecretsManagerClientBuilder  clientBuilder  =  AWSSecretsManagerClientBuilder.standard();
-        clientBuilder.setEndpointConfiguration(config);
+        // clientBuilder.setEndpointConfiguration(config);
         AWSSecretsManager client  =  clientBuilder.build();
 
         ObjectMapper  objectMapper  =  new ObjectMapper();
@@ -46,8 +44,8 @@ public class SecretStore {
         // We rethrow the exception by default.
 
         String secret, decodedBinarySecret;
-        GetSecretValueRequest getSecretValueRequest = new GetSecretValueRequest()
-                .withSecretId(secretName);
+     //   GetSecretValueRequest getSecretValueRequest = new GetSecretValueRequest()
+           //     .withSecretId(secretName);
         GetSecretValueResult getSecretValueResult = null;
 
         try {
