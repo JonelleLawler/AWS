@@ -1,4 +1,5 @@
-com\lawler\jonelle\Database\DatabaseApplication.class
+com\lawler\jonelle\Database\Application.class
 com\lawler\jonelle\Database\Instruction.class
-com\lawler\jonelle\Database\CocktailBook.class
+com\lawler\jonelle\Database\SecretStore.class
+com\lawler\jonelle\Database\CocktailRepo.class
 com\lawler\jonelle\Database\Cocktail.class

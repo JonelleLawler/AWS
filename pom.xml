@@ -62,20 +62,24 @@
 			<version>1.12.128</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager --><dependency>
+		<groupId>io.github.bonigarcia</groupId>
+		<artifactId>webdrivermanager</artifactId>
+		<version>5.0.3</version>
+	</dependency>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>3.141.59</version>
 		</dependency>
 		<dependency>
-			<groupId>com.lawler.jonelle</groupId>
-			<artifactId>Database</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
 			<groupId>aws.sdk.kotlin</groupId>
 			<artifactId>aws-endpoint</artifactId>
 			<version>0.9.3-alpha</version>
+		</dependency>
+		<dependency>
+			<groupId>net.bytebuddy</groupId>
+			<artifactId>byte-buddy-agent</artifactId>
 		</dependency>
 	</dependencies>
 
